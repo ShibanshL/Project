@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main{
+    height:200px;
+    width:400px;
+    cursor: pointer;
+    border:1px solid black;
+}
+.main .na{
+    background: pink;
+}
+.main .na:hover{
+    background: cyan;
+}
+.main .na h1{
+    font-size:100px;
+    font-family: 'Avant guard';
+    text-align: center;
+    transition: 1s ease;
+}
+.main .links{
+    /* background: pink; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap:2em;
+}
+#one, #two{
+    width:200px;
+    opacity:0;
+    transition: 0.5s ease;
+
+}
+#one:hover{
+    transform: scale(1.1);
+}
+#two:hover{
+    transform: scale(1.1);
+}
+
+.popup{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: none;
+    background: rgba(0,0,0,0.8);
+    transition: 1s ease;
+}
+.popup div{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.popup div img{
+    width:50%;
+    position: relative;
+    z-index: 1;
+    left:30%;
+}
+.popup div .stuff img{
+    width:2%;
+    position: relative;
+    z-index: 3;
+    top:-40%;
+    left:90%;
+    cursor:pointer;
+    transition: 0.5s ease;
+    border-radius: 50%;
+
+
+}
+.popup div .stuff img:hover{
+    background: white;
+    border-radius: 50%;
+}
